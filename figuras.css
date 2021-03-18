@@ -38,3 +38,27 @@
     transform: rotate(40deg);
     transform-origin: left 210px;
 }
+
+.barba::before
+{
+    content: "";
+    position: absolute;
+    left: 90px;
+    top: 120px;
+    width: 410px;
+    height: 420px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 70%;
+}
+
+.barba::after
+{
+    content: "";
+    position: absolute;
+    left: 490px;
+    top: 120px;
+    width: 410px;
+    height: 420px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 70% 0;
+}
