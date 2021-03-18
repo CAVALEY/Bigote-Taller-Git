@@ -72,3 +72,56 @@
     border: solid 50px currentColor;
             transform: rotate(0deg);
     }
+
+
+.cejas
+{
+        width: 30px;/*ancho*/
+        height: 30px;/*largo*/
+        left: 180px;/**/
+        border-radius: 50%;
+        position: relative;
+        color: black;
+        box-shadow: 180px 25px 0 0 currentColor, 350px 25px 0 0 currentColor;
+        animation-name: movimientoC;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        z-index: 2;
+}
+    
+.cejas::before
+{
+        content: "";
+        position: absolute;
+        left: 304px;
+        top: -5px;
+        width: 60px;
+        height: 20px;
+        border-bottom: solid 30px currentColor;
+        border-radius: 0 0 0 100%;
+        transform: rotate(-200deg);
+        transform-origin: right 40px;
+    
+}
+    
+.cejas::after
+{
+        content: "";
+        position: absolute;
+        left: 80px;
+        top: -25px;
+        width: 60px;
+        height: 20px;
+        border-bottom: solid 30px currentColor;
+        border-radius: 0 0 100% 0;
+        transform: rotate(200deg);
+        transform-origin: right 40px;
+}
+    
+@keyframes movimientoC
+{
+        0%{left: 180px; top: 0px;}
+        50%{left: 180px;top: -25px;}
+        100%{left: 180px; top: 0px;}
+    
+}
