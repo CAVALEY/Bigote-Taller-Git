@@ -1,0 +1,2 @@
+Hola buenos dias, este es el primer proyecto git del grupo
+
